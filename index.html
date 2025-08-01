@@ -3,45 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML</title>
+    <title>Interactive Form</title>
 </head>
-<body style ="background-color: aqua;">
-    <h1 style="font-style: italic;">This is not my first HTML file </h1>
-    <h2 style="background-color: blueviolet;">This is not my first HTML file</h2>
-    <h3 style="color: beige;">This is not my first HTML file</h3>
-    <h4>This is not my first HTML file</h4>
-    <h5>This is not my first HTML file</h5>
-    <h6>This is not my first HTML file</h6>
-    
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aspernatur eligendi rerum dolores. Iste doloribus quam inventore quia, nisi voluptatibus error alias, id, accusantium eaque enim aut similique ipsam aperiam.</p>
-    <ol>
-        <li>AIML</li>
-        <br>
-        <li>OS</li>
-        <br>
-        <li>FEDF</li>
-    </ol>
-<ul style="list-style-type: square;"> <!-- Unordered list comes in bullet points whereas ordered are numbered  -->
-  <li>Apple</li>
-  <li>Mango</li>
-  <li>Orange</li>
-</ul>
-<!-- Making the table-->
- <table border="1">
-    <th>Name </th>
-    <th>Roll Number</th>
-     
-    <tr>
-        <td>Mounitha</td>
-        <td>2420030330</td>
-    </tr>
+<body style="background-color: lightblue; font-family: Arial, sans-serif;">
 
-    <tr>
-        <td>Jahnavi</td>
-        <td>2420030173</td>
-    </tr>
- </table>
- <h2>Changes making in HTML</h2>
+    <h1 style="font-style: italic;">This is my first HTML Form</h1>
+    <h2 style="color: darkblue;">Welcome</h2>
+
+    <form style="background-color: white; padding: 20px; border-radius: 10px; width: 350px;">
+        <label style="display: block; margin-bottom: 8px;">Full Name:</label>
+        <input type="text" name="name" placeholder="Enter your name" 
+               style="padding: 8px; width: 95%; margin-bottom: 15px; border: 1px solid gray; border-radius: 5px;"
+               onmouseover="this.style.backgroundColor='lightyellow'" 
+               onmouseout="this.style.backgroundColor='white'">
+
+        <label style="display: block; margin-bottom: 8px;">Select Course:</label>
+        <select name="course" 
+                style="padding: 8px; width: 100%; margin-bottom: 15px; border: 1px solid gray; border-radius: 5px;"
+                onmouseover="this.style.backgroundColor='lightgreen'" 
+                onmouseout="this.style.backgroundColor='white'">
+            <option value="FEDF">FEDF</option>
+            <option value="AIML">AIML</option>
+            <option value="OOPS">OOPS</option>
+        </select>
+
+        <label style="display: block; margin-bottom: 8px;">Semester:</label>
+        <input type="number" name="semester" min="1" max="8" 
+               style="padding: 8px; width: 95%; margin-bottom: 15px; border: 1px solid gray; border-radius: 5px;"
+               onmouseover="this.style.backgroundColor='lightpink'" 
+               onmouseout="this.style.backgroundColor='white'">
+
+        <label style="display: block; margin-bottom: 8px;">CGPA:</label>
+        <input type="text" name="cgpa" placeholder="Enter CGPA"
+               style="padding: 8px; width: 95%; margin-bottom: 15px; border: 1px solid gray; border-radius: 5px;"
+               onmouseover="this.style.backgroundColor='lightblue'" 
+               onmouseout="this.style.backgroundColor='white'">
+
+        <br>
+        <!-- Submit button with hover color change -->
+        <input type="submit" value="Submit" 
+               style="padding: 10px 20px; border: none; border-radius: 5px; background-color: darkblue; color: white; cursor: pointer;"
+               onmouseover="this.style.backgroundColor='green'" 
+               onmouseout="this.style.backgroundColor='darkblue'">
+    </form>
 
 </body>
 </html>
