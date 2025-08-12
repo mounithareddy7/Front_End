@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
+}
+
+.image-box img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 12px; /* Optional: for rounded corners */
+}
